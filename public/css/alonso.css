@@ -1,0 +1,520 @@
+/** IMPORTS **/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* ---------------------------------------------------
+    LAYOUT LOGIN STYLE
+----------------------------------------------------- */
+body { font-family: 'Roboto', sans-serif; }
+#banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.bgp-content::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  background: url("../img/2909.jpg") center center no-repeat;
+  background-size: cover;
+  -webkit-backgroung-size: cover;
+  -moz-background-size: cover;
+  opacity: 0.29;
+  -webkit-opacity: 0.29;
+  -moz-opacity: 0.29;
+}
+
+.container-fluid {padding-left: 0;}
+
+#banner::before {
+  background-color: rgba(191, 55, 60, 0.5);
+}
+
+#banner::before, #banner::after, .bgp-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#banner::after{
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  background: url("../img/2909.jpg") center center no-repeat;
+  background-size: cover;
+  -webkit-backgroung-size: cover;
+  -moz-background-size: cover;
+}
+
+#banner > * {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+#banner h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+#FormLogin p:nth-child(1) {
+  padding-top: 7.5rem;
+}
+
+#FormLogin h1 {
+  color: rgba(191, 55, 60, 1);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+#FormLogin p:nth-child(1), #FormLogin h1 {
+  text-transform: uppercase;
+  text-align: center;}
+
+#FormLogin p:nth-child(1) {
+  font-size: 1.13rem;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#FormLogin p { text-align: center; }
+
+form[name="FormLoginContent"] {
+  width: 80%;
+  margin: 0 10%;
+  padding-top: 1.25rem;
+}
+
+form[name="FormLoginContent"] button {
+  width: 100%;
+  border-radius: 1.82rem;
+  text-transform: uppercase;
+  margin-top: 1.25rem;
+}
+
+form[name="FormLoginContent"] .form-group input[type="email"], form[name="FormLoginContent"] .form-group input[type="password"], form[name="FormLoginContent"] .form-group input[type="text"] {
+  padding-left: 2.38rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: auto;
+  /* border: 0;
+  border-bottom: 1px solid #435160;
+  outline: none; */
+  border-radius: 1.82rem;
+}
+form[name="FormLoginContent"] .form-group:nth-child(2) span.input-group-addon {
+  position: absolute;
+  top: 19.75rem;
+  padding: 0.88rem 0.76rem;
+}
+
+form[name="FormLoginContent"] .form-group:nth-child(3) span.input-group-addon {
+  position: absolute;
+  top: 26.3125rem;
+  padding: 0.88rem 0.76rem;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar .bg-profile { height: 170px; }
+#sidebar .bg-profile::before {
+  opacity: .4;
+  z-index: 0;
+  background: url("../img/profile.jpg") center center no-repeat;
+  background-size: cover;
+  -webkit-backgroung-size: cover;
+  -moz-background-size: cover;
+  width: 250px;
+  height: 170px;
+  content: "";
+  position: absolute;
+
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    color: #fff;
+    background: #323139;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar ul.components { border-top: 1px solid #DFE0DC;}
+
+
+.btn-logout {
+  bottom: 0;
+  width: 15.90rem;
+  position: absolute;
+  height: 3.93rem;
+}
+
+.btn-logout a {
+  color: #fff;
+}
+
+.btn-logout a:hover {
+  color: #F34219;
+}
+
+#sidebar ul li a {
+    padding: 1rem;
+    font-size: 1.1em;
+    display: block;
+    color: #DFE0DC;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+#sidebar ul li a svg {
+  margin-right: 10px;
+}
+
+#sidebar ul li a:hover {
+    color: #fff;
+    background: #2a292f;
+    text-decoration: none;
+}
+
+#sidebar .sidebar-header .bg-profile picture {
+  display: block;
+  padding: 70px 0 35px 25px;
+}
+
+#sidebar .sidebar-header .bg-profile picture img {
+  width: 50px;
+  float: left;
+  margin: 15px;
+}
+
+#sidebar p {
+  position: relative;
+  top: -7px;
+  font-size: 17px;
+  left: 9px;
+  margin-bottom: 50px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+
+#content nav picture {
+  display: block;
+  width: 100%;
+}
+
+#content nav picture img {
+  width: 4.15rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#sidebarCollapse {
+  position: absolute;
+  top: 0;
+}
+
+.content-text {
+  margin: 50px 0 0 15px;
+}
+
+/* ---------------------------------------------------
+    INPUT FORMS
+----------------------------------------------------- */
+.label-float{
+  position: relative;
+  padding-top: 13px;
+}
+
+.label-float input{
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  outline: none;
+  /* min-width: 250px; */
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -webkit-appearance:none;
+}
+
+.label-float input:focus{
+  border: 2px solid #3951b2;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 15px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  background-color: white;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* .label-float input:required:invalid + label{
+  color: red;
+} */
+/* .label-float input:focus:required:invalid{
+  border: 2px solid red;
+} */
+/* .label-float input:required:invalid + label:before{
+  content: '*';
+} */
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  top: 0;
+  color: #3951b2;
+}
+
+/* ---------------------------------------------------
+    TABELAS
+----------------------------------------------------- */
+
+.Tableboxs, .Formboxs {
+  background-color: white;
+  z-index: 1000;
+  width: 100%;
+  height: 82vh;
+}
+
+.Tableboxs h2 {
+  padding: 36px 0 0 24px;
+  font-family: 'Open Sans', sans-serif;
+ }
+
+.Tableboxs form { padding: 24px 24px 0 24px; }
+
+.Tableboxs button {
+  position: absolute;
+  right: 20px;
+  margin: 24px;
+  top: 8px;
+}
+
+.Tableboxs .alert {
+  margin: 24px;
+}
+
+.Tableboxs button a, .Tableboxs button + button a { color: #fff; }
+
+.Tableboxs button a:hover, .Tableboxs button + button a:hover { text-decoration: none; }
+
+.Tableboxs button + button {
+  position: absolute;
+  right: 200px;
+}
+
+.Tableboxs button, .Tableboxs button + button { width: 175px;}
+
+.Tableboxs table {
+  margin: 0 2%;
+  width: 96%;
+}
+
+.Tableboxs table tbody tr td button {
+  position: relative;
+  width: auto;
+  right: 0;
+  margin: 0;
+  top: 0;
+}
+
+.lblStatus, .lblFromDate, .lblToDate {
+  align-items: flex-end;
+  padding-right: 12px;
+  display: flex;
+}
+
+.dropdown { cursor: pointer; }
+
+.dropdown-menu a:active {
+  background-color: transparent;
+}
+
+/* .modal-title {
+  text-align: center;
+  text-transform: uppercase;
+} */
+
+.modal-footer button, .modal-footer button + button, .modal-header button {
+  position: relative;
+  right: 0;
+  margin: 6px;
+  top: 0;
+  width: auto;
+}
+
+/* ---------------------------------------------------
+    INPUTS FLOATING/LABEL
+----------------------------------------------------- */
+
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+
+.field svg {
+  position: absolute;
+  top: 24px;
+  color: #468189;
+  /* margin-top: -36px; */
+}
+
+.field label, .field input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+.field input {
+  /* font-size: 1.5em; */
+  font-size: 20px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+  margin-left: 45px;
+  /* width: 180px; */
+}
+
+.field input:focus {
+  outline: 0;
+  border-bottom: 1px solid #666;
+}
+
+.field label {
+  color: gray;
+  margin-left: 45px;
+}
+
+.field input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.5);
+}
+
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+
+.field input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.field input:not(:placeholder-shown) + label,
+.field input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------
+    FORMS
+----------------------------------------------------- */
+.Formboxs { padding: 36px 24px 0 24px; }
+
+.Formboxs h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.Formboxs h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.Formboxs form input[type=reset]{
+  margin-top: 26px;
+}
+
+.Formboxs div button {
+  margin-top: 24px;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+@media (max-width: 508px) {
+  #content nav picture {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Tableboxs button  {
+    display: block;
+    position: relative;
+    margin: 20px 0 0 48px;
+  }
+
+  .Tableboxs button + button {
+    display: block;
+    position: relative;
+    margin: 20px 0 0 48px;
+    right: 20px;
+  }
+}
